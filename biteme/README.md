@@ -4,7 +4,7 @@
 
 ---
 
-## Enumeration
+## Reconnaissance
 
 ```bash
 ┌──(kali㉿kali)-[~]
