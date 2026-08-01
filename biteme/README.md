@@ -1,7 +1,5 @@
 # Bite Me — TryHackMe Writeup
 
-A walkthrough of the **Bite Me** room on TryHackMe, covering enumeration, a `.phps` source-disclosure bug (and a workaround), MFA brute-forcing, and privilege escalation via `fail2ban`.
-
 <img width="338" height="133" alt="Bite Me challenge banner" src="https://github.com/user-attachments/assets/3a0badb4-d030-4d3d-8669-f48ba66a8ef2" />
 
 ---
