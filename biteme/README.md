@@ -68,7 +68,7 @@ Every request returned **403 Forbidden**.
 
 ### The version mismatch
 
-After comparing notes with other public writeups, they were all able to pull `index.phps` cleanly — same steps, same box, no extra tricks. The only visible difference was the **Apache/PHP version**:
+After being stuck for a while, I looked up public writeups, and they were all able to pull `index.phps`. The only visible difference was the **Apache/PHP version**:
 
 | | My instance | Other writeups |
 |---|---|---|
@@ -190,7 +190,7 @@ After gaining root, I confirmed why `.phps` was blocked on this instance. The bo
 </FilesMatch>
 ```
 
-Newer Ubuntu/PHP packaging ships this `Require all denied` directive **enabled by default** (it's commented out in older PHP 7.2-era configs), which is why this instance blocked `.phps` requests while writeups built against older Apache/PHP versions could access them freely. This is a hardening change in the PHP packaging, not a room bug — but it does mean the "intended" `.phps` disclosure step is inconsistent across box instances depending on provisioning/patch level.
+Newer Ubuntu/PHP packaging ships this `Require all denied` directive **enabled by default**, which is why this instance blocked `.phps` requests while writeups built against older Apache/PHP versions could access them freely.
 
 ---
 
